@@ -1,5 +1,5 @@
 en:
-  trestle_rake:
-    run: Run
-    run_success: "The task '%{task_name}' was launched"
-    unknown_task: "The task '%{task_name}' does not exists"
+  trestle_active_job:
+    perform: Perform
+    perform_success: "The task '%{job_name}' is scheduled"
+    unknown_job: "The task '%{job_name}' does not exists"

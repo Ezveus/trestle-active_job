@@ -1,5 +1,5 @@
 fr:
-  trestle_rake:
-    run: Lancer
-    run_success: "La tâche '%{task_name}' a été lancée"
-    unknown_task: "La tâche '%{task_name}' n'existe pas"
+  trestle_active_job:
+    perform: Lancer
+    perform_success: "Le job '%{job_name}' a été lancé"
+    unknown_job: "Le job '%{job_name}' n'existe pas"

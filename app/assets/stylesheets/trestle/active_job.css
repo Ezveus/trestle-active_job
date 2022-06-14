@@ -1,10 +1,10 @@
-.rake-tasks-header-button {
+.trestle-active-job-header-button {
     float: right;
     margin: 6px 16px;
     font-size: 26px;
 }
 
-.rake-tasks-grid {
+.trestle-active-job-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: 7fr 3fr;
@@ -12,6 +12,6 @@
     margin-top: 1rem;
 }
 
-.rake-tasks-grid .rake-tasks-task-name {
+.trestle-active-job-grid .trestle-active-job-name {
     margin-left: 1rem;
 }

@@ -1,5 +1,5 @@
 module Trestle
-  module Rake
+  module ActiveJob
     VERSION = '1.0.0'
   end
 end

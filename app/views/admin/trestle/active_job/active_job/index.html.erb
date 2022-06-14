@@ -1,0 +1,27 @@
+<%= content_for(:title, "Active jobs") %>
+
+<% if flash[:notice] %>
+  <div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="text-center d-flex align-items-center justify-content-center">
+      <i class="fa fa-check-circle fa-2x margin-right-md"></i>
+      <span><%= flash[:notice] %></span>
+    </div>
+  </div>
+<% end %>
+
+<div class="trestle-active-job-grid">
+  <% @jobs.each do |job| %>
+    <div class="trestle-active-job-name">
+      <%= t(job, scope: 'trestle_active_job', default: job) %>
+    </div>
+    <div class="trestle-active-job-perform">
+      <%= form_tag admin.path(:perform_job), id: "update_#{job}_form", method: :post, class: 'form-inline mb-2', style: 'width: 100%;' do %>
+        <%= hidden_field_tag('job', job, id: "job_#{job}", class: 'form-check-input') %>
+        <%= submit_tag(t('perform', scope: 'trestle_active_job', default: 'Perform'), class: 'btn btn-success') %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
