@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/Ezveus/trestle-active_job"
 
-  spec.add_dependency 'rails', '>= 5.2'
+  spec.add_dependency 'rails', '>= 5.2', '< 8'
   spec.add_dependency "trestle", "~> 0.9.0", ">= 0.9.3"
 
   spec.add_development_dependency "rspec-rails", "~> 4.0"
